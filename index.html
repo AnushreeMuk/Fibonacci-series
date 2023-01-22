@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fibonacci Series</title>
+    <body>
+<script>
+    const number = prompt('Enter the number of terms');
+    let n1 = 0, n2 = 1, nextTerm;
+
+document.write("Fibonacci Series:<br>");
+
+for (let i = 1; i < number; i++) {
+    document.write(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
+}
+
+function erase(){
+    let paragraphs= document.querySelectorAll("p");
+    //let y= document.getElementById("names").value
+    for(
+        var i=0; i<paragraphs.length;i++
+    ){
+        paragraphs[i].innerHTML ="In mathematics, the Fibonacci numbers, commonly denoted Fₙ, form a sequence, the Fibonacci sequence, in which each number is the sum of the two preceding ones. The sequence commonly starts from 0 and 1, although some authors start the sequence from 1 and 1 or sometimes from 1 and 2.";
+    }
+}
+
+</script>
+</head>
+<center>
+    <p>&nbsp;</p>
+    <button onclick="erase()">Click Here To Learn !</button>
+</center>
+</body>
+</html>
